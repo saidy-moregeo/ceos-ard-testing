@@ -33,40 +33,22 @@ nocite: |
 
 ![](assets/CEOS_logo_colour_black_text_right.png)
 
-# CEOS-ARD - Optical - Surface Reflectance
+# <!-- edit:pfs/SR/document.yaml -->CEOS-ARD - Optical - Surface Reflectance
 
 &nbsp;
 
-## Draft Version
+## <!-- edit:/home/runner/work/ceos-ard-testing/ceos-ard-testing/sections/document/draft.md -->Draft Version
 
 This is a draft version.
 Please visit the [CEOS-ARD website](https://ceos.org/ard) for the latest endorsed version of this document.
 
-## Document Status
+## <!-- edit:/home/runner/work/ceos-ard-testing/ceos-ard-testing/sections/document/status.md -->Document Status
 
 Product Family Specification, Optical, Surface Reflectance
 
 Proposed revisions may be provided to: [ard-contact@lists.ceos.org](mailto:ard-contact@lists.ceos.org)
 
-## Document History
-
-### 2026-03-26 (PATCH)
-
-- Renamed CARD4L to CEOS-ARD
-- Restructured the document; removed empty or unused parts
-- Document history has been reset. Check the previous versions for details
-- Numerical identifiers were rotated and are deprecated; new textual identifiers have been added
-- The requirement "Radiometric corrections must lead to a valid measurement [...]" has been moved from the category description to the measurement requirement.
-- If no threshold requirement applies, the wording has been made consistent (e.g. former req. 1.7 and 1.8).
-- Former req. 2.13 has been removed as it had neither a threshold nor a goal requirement.
-
-**Justification:**
-Migration to building blocks.
-
-**Editor:** Matthias Mohr
-
-
-## Contributing Authors
+## <!-- edit:pfs/SR/document.yaml#/authors -->Contributing Authors
 
 - Adam Lewis, Geoscience Australia, Australia
 - Jonathon Ross, Geoscience Australia, Australia
@@ -78,11 +60,16 @@ Migration to building blocks.
 
 &#12;
 
-## CEOS Analysis Ready Data Definition
+::: {#toc}
+:::
+
+&#12;
+
+## <!-- edit:/home/runner/work/ceos-ard-testing/ceos-ard-testing/sections/document/definition.md -->CEOS Analysis Ready Data Definition
 
 > CEOS Analysis Ready Data (CEOS-ARD) are satellite data that have been processed to a minimum set of requirements and organized into a form that allows immediate analysis with a minimum of additional user effort and interoperability both through time and with other datasets.
 
-## Description
+## <!-- edit:pfs/SR/document.yaml -->Description
 
 **Product Family Specification:**
 Optical, Surface Reflectance (SR)
@@ -96,7 +83,7 @@ Data collected with multispectral optical sensors operating in the VIS/NIR/SWIR 
 
 &#12;
 
-## Definitions and Abbreviations
+## <!-- edit:pfs/SR/document.yaml#/glossary -->Definitions and Abbreviations
 
 <!-- edit:/home/runner/work/ceos-ard-testing/ceos-ard-testing/glossary/atbd.yaml -->
 ATBD
@@ -168,7 +155,7 @@ WGS84
 
 &#12;
 
-## Requirements
+## <!-- edit:pfs/SR/document.yaml#/requirements -->Requirements
 
 **WARNING:** The section numbers in front of the title (e.g. 1.1) are not stable and may change or may be removed at any time.
 Do **not** use the numbers to refer back to specific requirements!
@@ -959,7 +946,7 @@ Note:
 &#12;
 
 
-## Introduction
+## <!-- edit:/home/runner/work/ceos-ard-testing/ceos-ard-testing/sections/document/introduction.md -->Introduction
 
 This section aims to provide background and specific information on the processing steps that can be
 used to achieve analysis ready data for a specific and well-developed Product Family Specification.
@@ -1003,8 +990,44 @@ Over time, _goal_ specifications may (and subject to due process) become accepte
 
 &#12;
 
-## References
+## <!-- edit:pfs/SR/document.yaml#/references -->References
 
 ::: {#refs}
 :::
+
+
+&#12;
+
+## Document History
+
+Editorial changes are not listed.
+
+### Version 5.0.2-draft (unreleased draft)
+
+This version has not been released yet.
+
+**Editors:** Matthias Mohr
+
+::::: {.changelog columns="Building Block|Change|Level" widths="0.25|0.65|0.10"}
+:::: {.entry}
+::: {.cell}
+Document
+:::
+::: {.cell}
+- Renamed CARD4L to CEOS-ARD
+- Restructured the document; removed empty or unused parts
+- Document history has been reset. Check the previous versions for details
+- Numerical identifiers were rotated and are deprecated; new textual identifiers have been added
+- The requirement "Radiometric corrections must lead to a valid measurement [...]" has been moved from the category description to the measurement requirement.
+- If no threshold requirement applies, the wording has been made consistent (e.g. former req. 1.7 and 1.8).
+- Former req. 2.13 has been removed as it had neither a threshold nor a goal requirement.
+
+:::
+::: {.cell}
+minor
+:::
+::::
+:::::
+
+The history of the versions before 5.0.2 is available in the older versions of this document, see the [CEOS-ARD website](https://ceos.org/ard/index.html#specs) or the [GitHub releases](https://github.com/ceos-org/ceos-ard/releases).
 

@@ -33,45 +33,22 @@ nocite: |
 
 ![](assets/CEOS_logo_colour_black_text_right.png)
 
-# CEOS-ARD - Synthetic Aperture Radar - Geocoded Single-Look Complex
+# <!-- edit:pfs/GSLC/document.yaml -->CEOS-ARD - Synthetic Aperture Radar - Geocoded Single-Look Complex
 
 &nbsp;
 
-## Draft Version
+## <!-- edit:/home/runner/work/ceos-ard-testing/ceos-ard-testing/sections/document/draft.md -->Draft Version
 
 This is a draft version.
 Please visit the [CEOS-ARD website](https://ceos.org/ard) for the latest endorsed version of this document.
 
-## Document Status
+## <!-- edit:/home/runner/work/ceos-ard-testing/ceos-ard-testing/sections/document/status.md -->Document Status
 
 Product Family Specification, Synthetic Aperture Radar, Geocoded Single-Look Complex
 
 Proposed revisions may be provided to: [ard-contact@lists.ceos.org](mailto:ard-contact@lists.ceos.org)
 
-## Document History
-
-### 2026-07-20 (MINOR)
-
-- The Combined SAR PFS has been split into separate PFS per product type
-- Restructured the document; various minor editorial changes; removed empty, irrelevant, or unused parts - many of the changes resulted from the split
-- Numerical identifiers were rotated and are deprecated; new textual identifiers have been added
-- Moved the Background paragraph about the commonalities and differences in the SAR PFSes to the Introduction
-- Requirement "Document identifier": Removed the trailing “for Synthetic Aperture Radar”
-- Requirement category "CEOS-ARD Product Data Attributes" renamed to “Product Metadata”; Requirement "Source Data Attributes" renamed to “Source Metadata”. Adapted descriptions accordingly.
-- Requirement category "Source Data Attributes": Moved the information about sequential acquisition identifiers to a new threshold requirement “Acquisition ID”. Adapted category description accordingly.
-- The subcategories for Source and Product metadata have been flattened into top-level categories
-- Annex has been reformatted and updated as required by the split
-- Document history has been reset. Check the previous versions for details
-
-**Note:** This document is the successor of the former [CEOS-ARD for SAR PFS v1.3.1](https://ceos.org/ard/files/PFS/SAR/v1.3.1/CEOS-ARD_PFS_SAR_v1.3.1.pdf) for product type **Geocoded Single-Look Complex (GSLC)**.
-
-**Justification:**
-Migration to building blocks.
-
-**Editor:** Matthias Mohr
-
-
-## Contributing Authors
+## <!-- edit:pfs/GSLC/document.yaml#/authors -->Contributing Authors
 
 - François Charbonneau, Natural Resources Canada, Canada
 - Ake Rosenqvist, soloEO / Japan Aerospace Exploration Agency, Japan
@@ -112,11 +89,16 @@ Migration to building blocks.
 
 &#12;
 
-## CEOS Analysis Ready Data Definition
+::: {#toc}
+:::
+
+&#12;
+
+## <!-- edit:/home/runner/work/ceos-ard-testing/ceos-ard-testing/sections/document/definition.md -->CEOS Analysis Ready Data Definition
 
 > CEOS Analysis Ready Data (CEOS-ARD) are satellite data that have been processed to a minimum set of requirements and organized into a form that allows immediate analysis with a minimum of additional user effort and interoperability both through time and with other datasets.
 
-## Description
+## <!-- edit:pfs/GSLC/document.yaml -->Description
 
 **Product Family Specification:**
 Synthetic Aperture Radar, Geocoded Single-Look Complex (GSLC)
@@ -128,7 +110,7 @@ Synthetic Aperture Radar, Geocoded Single-Look Complex (GSLC)
 Data collected by Synthetic Aperture Radar sensors
 
 
-## Background
+## <!-- edit:pfs/GSLC/document.yaml#/background -->Background
 
 This PFS is specifically aimed at users interested in exploring the potential of SAR but who may lack the expertise or facilities for SAR processing.
 
@@ -142,11 +124,11 @@ The GSLC product may optionally be radiometrically terrain corrected such that t
 
 &#12;
 
-## Definitions and Abbreviations
+## <!-- edit:pfs/GSLC/document.yaml#/glossary -->Definitions and Abbreviations
 
 <!-- edit:/home/runner/work/ceos-ard-testing/ceos-ard-testing/glossary/acdd.yaml -->
 ACDD
-:   Attribute Convention for Data Discovery as defined by Earth Science Information Partners (ESIP)
+:   Attribute Convention for Data Discovery as defined by Earth Science Information Partners (ESIP).
 
 <!-- edit:/home/runner/work/ceos-ard-testing/ceos-ard-testing/glossary/ale.yaml -->
 ALE
@@ -295,11 +277,11 @@ WGS84
 <!-- edit:/home/runner/work/ceos-ard-testing/ceos-ard-testing/glossary/wkt.yaml -->
 WKT
 :   Well-Known Text (WKT) is a text markup language for representing vector geometry objects on a map, spatial reference systems of spatial objects, and transformations between spatial reference systems.
-The formats were originally defined by the Open Geospatial Consortium (OGC) and described in their Simple Feature Access and Coordinate Transformation Service specifications.
+    The formats were originally defined by the Open Geospatial Consortium (OGC) and described in their Simple Feature Access and Coordinate Transformation Service specifications.
 
 &#12;
 
-## Requirements
+## <!-- edit:pfs/GSLC/document.yaml#/requirements -->Requirements
 
 **WARNING:** The section numbers in front of the title (e.g. 1.1) are not stable and may change or may be removed at any time.
 Do **not** use the numbers to refer back to specific requirements!
@@ -1714,7 +1696,7 @@ For products presented in geographic coordinates (latitude and longitude), the o
 &#12;
 
 
-## Introduction
+## <!-- edit:/home/runner/work/ceos-ard-testing/ceos-ard-testing/sections/document/introduction.md -->Introduction
 
 This section aims to provide background and specific information on the processing steps that can be
 used to achieve analysis ready data for a specific and well-developed Product Family Specification.
@@ -1767,14 +1749,14 @@ Consequently, it becomes obvious that they all can follow a common approach, in 
 
 &#12;
 
-## References
+## <!-- edit:pfs/GSLC/document.yaml#/references -->References
 
 ::: {#refs}
 :::
 
 &#12;
 
-## Annexes
+## <!-- edit:pfs/GSLC/document.yaml#/annexes -->Annexes
 
 ### <!-- edit:/home/runner/work/ceos-ard-testing/ceos-ard-testing/sections/annexes/sar-general-processing-roadmap.yaml-->General Processing Roadmap {#sec:annex-sar-general-processing-roadmap label="|General Processing Roadmap"}
 
@@ -1929,4 +1911,45 @@ The following figures show 3-D components radar unit look vector of the GSLC pro
 
 ![z unit component](assets/sar-gslc-example/S1-GSLC-z-component.png){#fig:sar-gslc-example-fig2c}
 
+
+
+&#12;
+
+## Document History
+
+Editorial changes are not listed.
+
+### Version 2.0.0-draft (unreleased draft)
+
+This version has not been released yet.
+
+**Editors:** Matthias Mohr
+
+::::: {.changelog columns="Building Block|Change|Level" widths="0.25|0.65|0.10"}
+:::: {.entry}
+::: {.cell}
+Document
+:::
+::: {.cell}
+- The Combined SAR PFS has been split into separate PFS per product type
+- Restructured the document; various minor editorial changes; removed empty, irrelevant, or unused parts - many of the changes resulted from the split
+- Numerical identifiers were rotated and are deprecated; new textual identifiers have been added
+- Moved the Background paragraph about the commonalities and differences in the SAR PFSes to the Introduction
+- Requirement "Document identifier": Removed the trailing “for Synthetic Aperture Radar”
+- Requirement category "CEOS-ARD Product Data Attributes" renamed to “Product Metadata”; Requirement "Source Data Attributes" renamed to “Source Metadata”. Adapted descriptions accordingly.
+- Requirement category "Source Data Attributes": Moved the information about sequential acquisition identifiers to a new threshold requirement “Acquisition ID”. Adapted category description accordingly.
+- The subcategories for Source and Product metadata have been flattened into top-level categories
+- Annex has been reformatted and updated as required by the split
+- Document history has been reset. Check the previous versions for details
+
+**Note:** This document is the successor of the former [CEOS-ARD for SAR PFS v1.3.1](https://ceos.org/ard/files/PFS/SAR/v1.3.1/CEOS-ARD_PFS_SAR_v1.3.1.pdf) for product type **Geocoded Single-Look Complex (GSLC)**.
+
+:::
+::: {.cell}
+minor
+:::
+::::
+:::::
+
+The history of the versions before 2.0.0 is available in the older versions of this document, see the [CEOS-ARD website](https://ceos.org/ard/index.html#specs) or the [GitHub releases](https://github.com/ceos-org/ceos-ard/releases).
 

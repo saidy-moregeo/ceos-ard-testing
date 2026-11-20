@@ -33,41 +33,22 @@ nocite: |
 
 ![](assets/CEOS_logo_colour_black_text_right.png)
 
-# CEOS-ARD - Optical - Aquatic Reflectance
+# <!-- edit:pfs/AR/document.yaml -->CEOS-ARD - Optical - Aquatic Reflectance
 
 &nbsp;
 
-## Draft Version
+## <!-- edit:/home/runner/work/ceos-ard-testing/ceos-ard-testing/sections/document/draft.md -->Draft Version
 
 This is a draft version.
 Please visit the [CEOS-ARD website](https://ceos.org/ard) for the latest endorsed version of this document.
 
-## Document Status
+## <!-- edit:/home/runner/work/ceos-ard-testing/ceos-ard-testing/sections/document/status.md -->Document Status
 
 Product Family Specification, Optical, Aquatic Reflectance
 
 Proposed revisions may be provided to: [ard-contact@lists.ceos.org](mailto:ard-contact@lists.ceos.org)
 
-## Document History
-
-### 2026-04-13 (PATCH)
-
-- Restructured the document; removed empty or unused parts
-- Document history has been reset. Check the previous versions for details
-- Numerical identifiers were rotated and are deprecated; new textual identifiers have been added
-- The definitions are included in the document instead of referring to the CEOS Terms and Defintions Wiki
-- The references are not grouped by requirements and threshold/goal any longer. Instead, they are listed in the requirements as a note.
-- The requirement "Radiometric corrections must lead to a valid measurement [...]" has been moved from the category description to the measurement requirement.
-- The requirement references (i.e. "3.1-3.3" and "3.4 onwards") were removed from the category description of "Products and Algorithms".
-- If no threshold requirement applies, the wording has been made consistent (e.g. former req. 1.7 and 1.8).
-
-**Justification:**
-Migration to building blocks.
-
-**Editor:** Matthias Mohr
-
-
-## Contributing Authors
+## <!-- edit:pfs/AR/document.yaml#/authors -->Contributing Authors
 
 ### Technical Leads
 
@@ -109,11 +90,16 @@ Migration to building blocks.
 
 &#12;
 
-## CEOS Analysis Ready Data Definition
+::: {#toc}
+:::
+
+&#12;
+
+## <!-- edit:/home/runner/work/ceos-ard-testing/ceos-ard-testing/sections/document/definition.md -->CEOS Analysis Ready Data Definition
 
 > CEOS Analysis Ready Data (CEOS-ARD) are satellite data that have been processed to a minimum set of requirements and organized into a form that allows immediate analysis with a minimum of additional user effort and interoperability both through time and with other datasets.
 
-## Description
+## <!-- edit:pfs/AR/document.yaml -->Description
 
 **Product Family Specification:**
 Optical, Aquatic Reflectance (AR)
@@ -127,7 +113,7 @@ Data collected with multispectral and hyperspectral imaging sensors operating in
 
 &#12;
 
-## Definitions and Abbreviations
+## <!-- edit:pfs/AR/document.yaml#/glossary -->Definitions and Abbreviations
 
 <!-- edit:/home/runner/work/ceos-ard-testing/ceos-ard-testing/glossary/ancillary-data.yaml -->
 Ancillary Data
@@ -207,7 +193,7 @@ WGS84
 
 &#12;
 
-## Requirements
+## <!-- edit:pfs/AR/document.yaml#/requirements -->Requirements
 
 **WARNING:** The section numbers in front of the title (e.g. 1.1) are not stable and may change or may be removed at any time.
 Do **not** use the numbers to refer back to specific requirements!
@@ -1389,7 +1375,7 @@ The specifications of the co-registration and ortho-rectification processing (in
 &#12;
 
 
-## Introduction
+## <!-- edit:/home/runner/work/ceos-ard-testing/ceos-ard-testing/sections/document/introduction.md -->Introduction
 
 This section aims to provide background and specific information on the processing steps that can be
 used to achieve analysis ready data for a specific and well-developed Product Family Specification.
@@ -1433,8 +1419,45 @@ Over time, _goal_ specifications may (and subject to due process) become accepte
 
 &#12;
 
-## References
+## <!-- edit:pfs/AR/document.yaml#/references -->References
 
 ::: {#refs}
 :::
+
+
+&#12;
+
+## Document History
+
+Editorial changes are not listed.
+
+### Version 2.0.1-draft (unreleased draft)
+
+This version has not been released yet.
+
+**Editors:** Matthias Mohr
+
+::::: {.changelog columns="Building Block|Change|Level" widths="0.25|0.65|0.10"}
+:::: {.entry}
+::: {.cell}
+Document
+:::
+::: {.cell}
+- Restructured the document; removed empty or unused parts
+- Document history has been reset. Check the previous versions for details
+- Numerical identifiers were rotated and are deprecated; new textual identifiers have been added
+- The definitions are included in the document instead of referring to the CEOS Terms and Defintions Wiki
+- The references are not grouped by requirements and threshold/goal any longer. Instead, they are listed in the requirements as a note.
+- The requirement "Radiometric corrections must lead to a valid measurement [...]" has been moved from the category description to the measurement requirement.
+- The requirement references (i.e. "3.1-3.3" and "3.4 onwards") were removed from the category description of "Products and Algorithms".
+- If no threshold requirement applies, the wording has been made consistent (e.g. former req. 1.7 and 1.8).
+
+:::
+::: {.cell}
+minor
+:::
+::::
+:::::
+
+The history of the versions before 2.0.1 is available in the older versions of this document, see the [CEOS-ARD website](https://ceos.org/ard/index.html#specs) or the [GitHub releases](https://github.com/ceos-org/ceos-ard/releases).
 

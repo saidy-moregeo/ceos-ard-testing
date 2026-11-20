@@ -33,68 +33,22 @@ nocite: |
 
 ![](assets/CEOS_logo_colour_black_text_right.png)
 
-# CEOS-ARD - Optical - Surface Temperature
+# <!-- edit:pfs/ST/document.yaml -->CEOS-ARD - Optical - Surface Temperature
 
 &nbsp;
 
-## Draft Version
+## <!-- edit:/home/runner/work/ceos-ard-testing/ceos-ard-testing/sections/document/draft.md -->Draft Version
 
 This is a draft version.
 Please visit the [CEOS-ARD website](https://ceos.org/ard) for the latest endorsed version of this document.
 
-## Document Status
+## <!-- edit:/home/runner/work/ceos-ard-testing/ceos-ard-testing/sections/document/status.md -->Document Status
 
 Product Family Specification, Optical, Surface Temperature
 
 Proposed revisions may be provided to: [ard-contact@lists.ceos.org](mailto:ard-contact@lists.ceos.org)
 
-## Document History
-
-### 2026-08-14 (MAJOR)
-
-**This is a breaking change!**
-
-- Created separate requirements for 'Corrections for Atmosphere' and 'Adjustments for Emissivity and Anisotropy'. Per-pixel emissivity information is now required at Threshold. 
-- Introduced a Threshold requirement for 'Measurement Uncertainty'.
-- Renamed 'Measurement' to 'Measurand'
-- Removed threshold requirement for 'Algorithms'.
-- Introduced Per-pixel Goal requirement for 'Terrain Occlusion'.
-- Replaced 'Snow/Ice' mask with 'Surface', covering Land/Water at Threshold and Snow/Ice at Goal.
-- Updated 'Cloud' and 'Cloud Shadow' requirements to align more closely with the AR PFS v2.0 and the suitability of cloud shadow for non-reflectance methods.
-- Updated 'No Data' requirement to address https://github.com/ceos-org/ceos-ard/issues/4.
-- Updated 'Incomplete Testing' requirement to aid machine readability / automated assessment.
-- Removed redundant 'Metadata Machine Readability' requirement from Per-pixel Metadata.
-- Replaced General Metadata Percentage of Valid Observations requirement with Valid Pixels
-- Introduced a new Processing Chain Provenance requirement, where Threshold = Reconstructibility, Goal = Reproducibility. 
-- Removed 'Radiometric Accuracy' requirement.
-- Adopted AR PFS v2.0 requirements for 'Auxiliary Data', 'Measurand Uncertainty', 'Encoding', 'Sensor Calibration', 'Spectral Bands', 'Instrument', 'Geometric Uncertainty of the Data', 'Geometric Correction Methods', 'Map Projection', and 'Data Collection Time'.
-- Aligned with other optical PFS where the ST PFS had minor editorial differences.
-
-**Justification:**
-Update to address evolving landscape of thermal missions, including capabilities of the commercial sector and user needs. Closer alignment with more recently updated PFS. Changes also reflect recent CEOS-ARD Oversight Group discussions, swapping strict threshold requirements for algorithms in favour of uncertainty information.
-
-**Editor:** Harvey Jones
-
-### 2026-03-26 (PATCH)
-
-- Renamed CARD4L to CEOS-ARD
-- Restructured the document; removed empty or unused parts
-- Split "Applies to" section into "Applies to" and "Background" sections
-- Document history has been reset. Check the previous versions for details
-- Numerical identifiers were rotated and are deprecated; new textual identifiers have been added
-- The requirement "Radiometric corrections must lead to a valid measurement [...]" has been moved from the category description to the measurement requirement.
-- If no threshold requirement applies, the wording has been made consistent (e.g. former req. 1.7 and 1.8).
-- Former req. 1.9: Removed "on instrument" from "As threshold, but information on instrument should be available".
-- Former req. 2.3: Replaced the wording "e.g., due to missing ancillary data for some pixels." with "This may be the result of missing ancillary data for a subset of the pixels."
-- Annex has been reformatted and updated
-
-**Justification:**
-Migration to building blocks.
-
-**Editor:** Matthias Mohr
-
-
-## Contributing Authors
+## <!-- edit:pfs/ST/document.yaml#/authors -->Contributing Authors
 
 - Mathias Gergely (Aistech Space)
 - Harvey Jones (CEOS-ARD Secretariat)
@@ -127,11 +81,16 @@ Migration to building blocks.
 
 &#12;
 
-## CEOS Analysis Ready Data Definition
+::: {#toc}
+:::
+
+&#12;
+
+## <!-- edit:/home/runner/work/ceos-ard-testing/ceos-ard-testing/sections/document/definition.md -->CEOS Analysis Ready Data Definition
 
 > CEOS Analysis Ready Data (CEOS-ARD) are satellite data that have been processed to a minimum set of requirements and organized into a form that allows immediate analysis with a minimum of additional user effort and interoperability both through time and with other datasets.
 
-## Description
+## <!-- edit:pfs/ST/document.yaml -->Description
 
 **Product Family Specification:**
 Optical, Surface Temperature (ST)
@@ -143,13 +102,13 @@ Optical, Surface Temperature (ST)
 Data collected with satellite sensors operating in the thermal infrared (TIR and MWIR) and microwave wavelengths. These typically operate with ground sample distance and resolution in the order 1 dm - 50 km however the specification is not inherently limited to these resolutions.
 
 
-## Background
+## <!-- edit:pfs/ST/document.yaml#/background -->Background
 
 Remotely sensed surface temperature measurements tend to be provided as surface brightness temperature (SBT), land surface temperature (LST), water surface temperature (WST), or ice surface temperature (IST), where LST, WST, and IST are derived from SBT accounting for the emissivity of the target. This specification identifies Surface Temperature (ST), including but not limited to LST, WST, and IST, as the minimum or threshold requirement for analysis ready surface data.
 
 &#12;
 
-## Definitions and Abbreviations
+## <!-- edit:pfs/ST/document.yaml#/glossary -->Definitions and Abbreviations
 
 <!-- edit:/home/runner/work/ceos-ard-testing/ceos-ard-testing/glossary/auxiliary-data.yaml -->
 Auxiliary Data
@@ -205,7 +164,7 @@ WGS84
 
 &#12;
 
-## Requirements
+## <!-- edit:pfs/ST/document.yaml#/requirements -->Requirements
 
 **WARNING:** The section numbers in front of the title (e.g. 1.1) are not stable and may change or may be removed at any time.
 Do **not** use the numbers to refer back to specific requirements!
@@ -860,7 +819,7 @@ Note:
 &#12;
 
 
-## Introduction
+## <!-- edit:/home/runner/work/ceos-ard-testing/ceos-ard-testing/sections/document/introduction.md -->Introduction
 
 This section aims to provide background and specific information on the processing steps that can be
 used to achieve analysis ready data for a specific and well-developed Product Family Specification.
@@ -904,8 +863,294 @@ Over time, _goal_ specifications may (and subject to due process) become accepte
 
 &#12;
 
-## References
+## <!-- edit:pfs/ST/document.yaml#/references -->References
 
 ::: {#refs}
 :::
+
+
+&#12;
+
+## Document History
+
+Editorial changes are not listed.
+
+### Version 6.0.0-draft (unreleased draft)
+
+This version has not been released yet.
+
+**This version contains major changes.
+Products that comply with a previous version need to be reassessed to confirm their compliance with this version.**
+
+**Editors:** Harvey Jones, Matthias Mohr
+
+::::: {.changelog columns="Building Block|Change|Level" widths="0.25|0.65|0.10"}
+:::: {.entry}
+::: {.cell}
+Document
+:::
+::: {.cell}
+- Renamed CARD4L to CEOS-ARD
+- Restructured the document; removed empty or unused parts
+- Split "Applies to" section into "Applies to" and "Background" sections
+- Document history has been reset. Check the previous versions for details
+- Numerical identifiers were rotated and are deprecated; new textual identifiers have been added
+- The requirement "Radiometric corrections must lead to a valid measurement [...]" has been moved from the category description to the measurement requirement.
+- If no threshold requirement applies, the wording has been made consistent (e.g. former req. 1.7 and 1.8).
+- Former req. 1.9: Removed "on instrument" from "As threshold, but information on instrument should be available".
+- Former req. 2.3: Replaced the wording "e.g., due to missing ancillary data for some pixels." with "This may be the result of missing ancillary data for a subset of the pixels."
+- Annex has been reformatted and updated
+
+- Created separate requirements for 'Corrections for Atmosphere' and 'Adjustments for Emissivity and Anisotropy'. Per-pixel emissivity information is now required at Threshold. 
+- Introduced a Threshold requirement for 'Measurement Uncertainty'.
+- Renamed 'Measurement' to 'Measurand'
+- Removed threshold requirement for 'Algorithms'.
+- Introduced Per-pixel Goal requirement for 'Terrain Occlusion'.
+- Replaced 'Snow/Ice' mask with 'Surface', covering Land/Water at Threshold and Snow/Ice at Goal.
+- Updated 'Cloud' and 'Cloud Shadow' requirements to align more closely with the AR PFS v2.0 and the suitability of cloud shadow for non-reflectance methods.
+- Updated 'No Data' requirement to address https://github.com/ceos-org/ceos-ard/issues/4.
+- Updated 'Incomplete Testing' requirement to aid machine readability / automated assessment.
+- Removed redundant 'Metadata Machine Readability' requirement from Per-pixel Metadata.
+- Replaced General Metadata Percentage of Valid Observations requirement with Valid Pixels
+- Introduced a new Processing Chain Provenance requirement, where Threshold = Reconstructibility, Goal = Reproducibility. 
+- Removed 'Radiometric Accuracy' requirement.
+- Adopted AR PFS v2.0 requirements for 'Auxiliary Data', 'Measurand Uncertainty', 'Encoding', 'Sensor Calibration', 'Spectral Bands', 'Instrument', 'Geometric Uncertainty of the Data', 'Geometric Correction Methods', 'Map Projection', and 'Data Collection Time'.
+- Aligned with other optical PFS where the ST PFS had minor editorial differences.
+
+:::
+::: {.cell}
+**major**
+:::
+::::
+:::: {.entry}
+::: {.cell}
+Requirement: [Metadata Machine Readability](#sec:meta-memare-st)
+:::
+::: {.cell}
+Added more format examples to Goal description and replaced part for variable in the threshold description
+
+:::
+::: {.cell}
+minor
+:::
+::::
+:::: {.entry}
+::: {.cell}
+Requirement: [Data Collection Time](#sec:meta-time-st)
+:::
+::: {.cell}
+Added clarification for mosaic products.
+
+:::
+::: {.cell}
+minor
+:::
+::::
+:::: {.entry}
+::: {.cell}
+Requirement: [Geometric Uncertainty of the Data](#sec:meta-geounc-st)
+:::
+::: {.cell}
+Added reference to URL / DOI to Goal description
+
+:::
+::: {.cell}
+minor
+:::
+::::
+:::: {.entry}
+::: {.cell}
+Requirement: [Instrument](#sec:meta-instru-st)
+:::
+::: {.cell}
+Added requirement to include the satellite and instrument names in the metadata
+
+:::
+::: {.cell}
+**major**
+:::
+::::
+:::: {.entry}
+::: {.cell}
+Requirement: [Spectral Bands](#sec:meta-specband-st)
+:::
+::: {.cell}
+Added method of assessment and removed full from full spectral response function. Added reference to URL/DOI at Goal.
+
+:::
+::: {.cell}
+minor
+:::
+::::
+:::: {.entry}
+::: {.cell}
+Requirement: [Sensor Calibration](#sec:meta-sencal-st)
+:::
+::: {.cell}
+updated goal description to reference DOI/URL access and support for machine-to-machine access
+
+:::
+::: {.cell}
+minor
+:::
+::::
+:::: {.entry}
+::: {.cell}
+Requirement: [Measurand Uncertainty](#sec:meta-measurunc)
+:::
+::: {.cell}
+Replaced requirement title and description from radiometric to measurand uncertainty
+
+:::
+::: {.cell}
+minor
+:::
+::::
+:::: {.entry}
+::: {.cell}
+Requirement: [Measurand Encoding](#sec:meta-measurenc)
+:::
+::: {.cell}
+Renamed Radiometric Encoding to Measurand Encoding
+
+:::
+::: {.cell}
+minor
+:::
+::::
+:::: {.entry}
+::: {.cell}
+Requirement: [Algorithms](#sec:meta-malgos-st)
+:::
+::: {.cell}
+Removed threshold requirement, updated goal requirement
+
+:::
+::: {.cell}
+minor
+:::
+::::
+:::: {.entry}
+::: {.cell}
+Requirement: [Auxiliary Data](#sec:meta-auxdat-st)
+:::
+::: {.cell}
+Added URL/DOI reference and note of examples auxiliary data
+
+:::
+::: {.cell}
+minor
+:::
+::::
+:::: {.entry}
+::: {.cell}
+Requirement: [Processing Chain Provenance](#sec:meta-proprov-st)
+:::
+::: {.cell}
+introduced a threshold requirement requiring reconstructibility at Threshold and reworded the Goal requirement for reproducibility.
+
+:::
+::: {.cell}
+**major**
+:::
+::::
+:::: {.entry}
+::: {.cell}
+Requirement: [Data Access](#sec:meta-daccess-st)
+:::
+::: {.cell}
+Added goal requirement to identify online data access location, and minor wording update to threshold description.
+
+:::
+::: {.cell}
+minor
+:::
+::::
+:::: {.entry}
+::: {.cell}
+Requirement: [No Data](#sec:pxl-pinodat-st)
+:::
+::: {.cell}
+Added different no data classes
+
+:::
+::: {.cell}
+**major**
+:::
+::::
+:::: {.entry}
+::: {.cell}
+Requirement: [Incomplete Testing](#sec:pxl-pincot-st)
+:::
+::: {.cell}
+Specified the per-pixel tests that must be completed for threshold.
+
+:::
+::: {.cell}
+minor
+:::
+::::
+:::: {.entry}
+::: {.cell}
+Requirement: [Cloud](#sec:pxl-picloud-st)
+:::
+::: {.cell}
+Adopted AR PFS approach with an adjustment to the Goal requirement (broad cloud type/confidence over cirrus cloud identification) and requiring only 'cloud-affected' pixels to be identified.
+
+:::
+::: {.cell}
+minor
+:::
+::::
+:::: {.entry}
+::: {.cell}
+Requirement: [Cloud Shadow](#sec:pxl-picloudsh-st)
+:::
+::: {.cell}
+Adopted AR PFS approach but removed Threshold requirement and specified only 'cloud-affected' pixels
+
+:::
+::: {.cell}
+minor
+:::
+::::
+:::: {.entry}
+::: {.cell}
+Requirement: [Surface](#sec:pxl-surf-st)
+:::
+::: {.cell}
+Replaced Snow/Ice requirement with a Surface requirement, which features a threshold requirement for pixels identified as land or water to be flagged.
+
+:::
+::: {.cell}
+**major**
+:::
+::::
+:::: {.entry}
+::: {.cell}
+Requirement: [Terrain Occlusion](#sec:pxl-terrain-st)
+:::
+::: {.cell}
+Added SR terrain occlusion requirement with minor grammar change
+
+:::
+::: {.cell}
+minor
+:::
+::::
+:::: {.entry}
+::: {.cell}
+Requirement: [Measurand](#sec:rac-measur-st)
+:::
+::: {.cell}
+Removed 'of the land' qualifier for 'surface temperature,' renamed requirement to 'measurand' and added a link to Spectral Bands requirement
+
+:::
+::: {.cell}
+minor
+:::
+::::
+:::::
+
+The history of the versions before 6.0.0 is available in the older versions of this document, see the [CEOS-ARD website](https://ceos.org/ard/index.html#specs) or the [GitHub releases](https://github.com/ceos-org/ceos-ard/releases).
 
